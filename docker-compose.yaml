@@ -1,4 +1,4 @@
-version: '3.4'
+
 
 services:
   dev:
@@ -23,7 +23,7 @@ services:
     volumes:
       - ./:/app:cached
   db:
-    image: postgres
+    image: postgres:14
     container_name: livraria_db
     environment:
       - POSTGRES_USER=postgres
